@@ -1,8 +1,10 @@
+import {useState} from "react";
+
 export default function Contador() {
-    let count = 0;
+    const [count, setCount] = useState(0);
 
     function clique(){
-        count++;
+        setCount(count+1);
         console.log(count);
     }
 
@@ -10,11 +12,11 @@ export default function Contador() {
         <>
             <label>Contador</label>
             <br />
-            <button onClick={count}>
+            <button onClick={clique}>
                 Contagem : {count}
             </button>
 
-            <h1>vermelho</h1>
+            <h1>MARTINS</h1>
         </>
     )
 } 
